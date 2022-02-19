@@ -1,0 +1,152 @@
+body,html,.row-offcanvas {
+    height:100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    padding-top: 0px;
+    background-color: #EEEEEE;
+  }
+  
+  #sidebar {
+    width: inherit;
+    min-width: 220px;
+    max-width: 220px;
+    background-color:#f5f5f5;
+    float: left;
+    height:100%;
+    position:relative;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding: 15px;
+  }
+  #main {
+    height:100%;
+    overflow:auto;
+    padding: 20px;
+  }
+  
+  /*
+   * off Canvas sidebar
+   * --------------------------------------------------
+   */
+  @media screen and (max-width: 768px) {
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+      width:calc(100% + 220px);
+    }
+      
+    .row-offcanvas-left
+    {
+      left: -220px;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 0;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+    }
+  } 
+
+.sidebar{
+    color: white;
+    margin-right: 10px;
+    padding: 25px;
+     background-color:#0F0E0E;
+}
+.sidebar h3{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.sidebar ul li{
+    text-align: left;
+    display: block;
+    padding: 8px 0;
+}
+.sidebar ul li a{
+    font-size: 18px;
+   
+    text-decoration: none;
+    color: white;
+}
+.sidebar ul li a:hover{
+    text-decoration: none;
+    color: green;
+}
+.divider{
+    content: "";
+    border-bottom: solid 2px white;
+    margin: 25px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .video iframe{
+        width: 75%;
+        height: 75%;
+        border-radius: 15px;
+    }
+    .video{
+        height: 350px;
+    }
+    .banner{
+        height: 100vh;
+    }
+
+}
+
+
+
+.banner{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.9)) ,url("/assets/banner-happy.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(172, 169, 169);
+    height: 50vh;
+    width: 100vw;
+    padding: 15px;
+    padding-left: 50px;
+}
+.banner h3{
+  margin-top: 25vh;
+}
+.banner h2{
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+
+.content{
+    background-color: #EEEEEE;
+}
+.content h3{
+    font-size: 35px;
+    padding: 15px;
+}
+.video-row{
+  height: 100%;
+  width: 100%;
+}
+.video{
+    align-content: center;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+.video iframe{
+    border-radius: 15px;
+}
+
+
+.ngo-title::before{
+    border: #EEEEEE;
+    content: "";
+}
+.ngo-title{
+    margin: 25px 0 15px 0;
+}

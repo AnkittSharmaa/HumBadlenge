@@ -72,6 +72,40 @@ app.get('/logout', (req, res) => {
     res.redirect('/')
 })
 
+app.get('/q', (req, res) => {
+    res.render('questions');
+})
+
+app.get('/q/h', (req, res) => {
+    res.render('happy')
+})
+
+app.get('/q/s', (req, res) => {
+    res.render('sad')
+})
+
+app.get('/q/s/d', (req, res) => {
+    res.render('depression');
+})
+
+app.get('/q/s/h', (req, res) => {
+    res.render('depression');
+})
+
+app.get('/q/s/h/et', (req, res) => {
+    res.render('depression')
+})
+app.get('/q/s/h/bt', (req, res) => {
+    res.render('depression')
+})
+app.get('/q/s/h/bs', (req, res) => {
+    res.render('depression')
+})
+
+app.all("*", () => {
+    throw new Error("Page not found")
+})
+
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
     if (!err.message) err.message = "Oh no something went wrong!!";

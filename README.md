@@ -2,7 +2,7 @@
 Website created to help victims in case of any emergency
 
 ## Team members
-* Anshika Sharma- asharma_b20@it.vjti.ac.in
+* Anshika Sharma- asharma_b20@ce.vjti.ac.in
 * Ankit Sharma- asharma_b20@it.vjti.ac.in
 * Mithilesh Kawalkar- mnkawalkar_b20@it.vjti.ac.in
 * Abhishek Gupta- aogupta_b20@it.vjti.ac.in
